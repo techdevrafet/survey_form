@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./public/css/main.css">
+   <title>Clarusway Survey Form Challenge</title>
+</head>
+
+<body>
+
+   <main class="form">
+      <div class="form__title">
+         <h1>Clarusway Survey Form</h1>
+         <p>Thank you for taking the time o help us improve the platform.</p>
+      </div>
+      <form class="form__container" action="./result.html">
+         <div class="form__text">
+            <div class="form__input">
+               <label for="name">Name</label>
+               <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form__input">
+               <label for="surname">Surname</label>
+               <input type="text" name="surname" id="surname" placeholder="Enter your surname">
+            </div>
+            <div class="form__input">
+               <label for="email">Email</label>
+               <input type="email" name="email" id="email" placeholder="user@clarusway.com">
+            </div>
+         </div>
+
+         <div class="form__more">
+            <div class="form__role">
+               <label for="role">Which option best describes your current role?</label>
+               <select name="role" id="role">
+                  <option disabled selected>--- Select current role ---</option>
+                  <option value="aws-dev">AWS - DevOps</option>
+                  <option value="fullstack">Full Stack</option>
+                  <option value="data">Data Science</option>
+               </select>
+            </div>
+            <div class="form__recommend">
+               <p>Would you recommend Clarusway to a friend?</p>
+               <input type="radio" id="yes" name="recommend" value="yes">
+               <label for="yes">Definetely, yes</label><br>
+               <input type="radio" id="maybe" name="recommend" value="maybe">
+               <label for="maybe">Maybe</label><br>
+               <input type="radio" id="not-sure" name="recommend" value="not_sure">
+               <label for="not-sure">Not sure</label><br>
+               <input type="radio" id="no" name="recommend" value="no">
+               <label for="no">Definetely, no</label>
+            </div>
+            <div class="form__improve">
+               <p>What is your favorite feature of Clarusway?</p>
+               <input type="checkbox" id="front" name="improve" value="front">
+               <label for="front">Front-end Projects</label><br>
+               <input type="checkbox" id="back" name="improve" value="back">
+               <label for="back">Back-end Projects</label><br>
+               <input type="checkbox" id="data" name="improve" value="data">
+               <label for="data">Data Science</label><br>
+               <input type="checkbox" id="other" name="improve" value="additional">
+               <label for="other">Additional Courses</label><br>
+            </div>
+            <div class="form__comment">
+               <label for="comment">Any comments or sugestions?</label>
+               <textarea id="comment" name="content" style="resize: none;"></textarea>
+            </div>
+         </div>
+         <button class="form__btn" type="submit">Submit</button>
+      </form>
+   </main>
+</body>
+
+</html>

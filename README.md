@@ -1,2 +1,1 @@
-# survey_form
-Survey Form Challenge
+<h1 align="center">Clarusway Survey Form Challenge</h1>

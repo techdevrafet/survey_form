@@ -1,0 +1,23 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 10px;
+}
+
+// variables
+$pri-cyan: hsl(176, 50%, 47%);
+$pri-d-cyan: hsl(176, 72%, 28%);
+$neu-black: hsl(0, 0%, 0%);
+$neu-d-gray: hsl(0, 0%, 48%);
+
+// responsive
+
+@mixin tablet {
+   @media screen and (min-width: 576px) {
+       @content; 
+   }
+}
